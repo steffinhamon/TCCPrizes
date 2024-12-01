@@ -411,7 +411,7 @@ iframe{
     height: 250px;
     margin: 5px;
     border-radius: 15px;
-    background-color: #4f5136a7;
+    background-color: #414022;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -419,6 +419,7 @@ iframe{
     border-top: 1px solid rgb(255, 255, 255);
     border-left: 1px solid rgba(255, 255, 255, 0.753);
     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.151);
+    color: white;
  }
 
  .Imagem1{

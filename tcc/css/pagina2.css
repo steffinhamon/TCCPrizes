@@ -69,6 +69,38 @@ body{
      background: #fff;
      margin: 8px;
  }
+
+ .menu2
+{
+
+display: none;
+position: absolute;
+left: 60%;
+width: 40%;
+padding: 1rem;
+background-color: white;
+
+}
+
+.menu2 > ul
+{
+
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.menu2 > ul > li > a
+{
+
+  color: rgb(255, 255, 255);
+
+}
+
  
  @media (max-width: 999px)
  {
@@ -213,6 +245,8 @@ body{
     font-size: 0.9em;
     color: #fff;
     font-weight: 300;
+    align-items: center;
+    justify-content: center;
 }
 
 .containerCard .card2 .contantCard a{
@@ -273,6 +307,7 @@ main{
     max-width: 760px;
     margin: 0 auto;
     padding: 0 20px;
+    font-size: medium;
 }
 
 
@@ -458,7 +493,7 @@ color: black;
 margin-bottom: .75rem;
 }
 
-.card_button{
+.card__data a{
 text-decoration: none;
 font-size: var();
 font-weight: 500;
