@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+  background-color: #ffffff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover{
+  color: rgb(189, 189, 189);
+}
+
+.logo{
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+.menu
+{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Noto Sans Georgian";
+  background-color:#414022;
+  height: 12vh;
+  
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+
+}
+
+.nav-list > li{
+  letter-spacing: 3px;
+  margin-left: 30px;
+  
+}
+
+.menu2
+{
+
+display: none;
+position: absolute;
+left: 60%;
+width: 40%;
+padding: 1rem;
+background-color: white;
+
+}
+
+.menu2 > ul
+{
+
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.menu2 > ul > li > a
+{
+
+  color: rgb(255, 255, 255);
+
+}
+
+.mobile-menu{
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu > div{
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+}
+
+@media (max-width: 759px)
+{
+
+
+.nav-list{
+
+  display: none;
+
+}
+
+
+.mobile-menu{
+  display: block;
+}
+
+}
+
+.nav-list:active {
+  transform: translateX(0) ;
+}
+
+
+
+
+.contact-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Altura do banner */
+  background: #414022; /* Gradiente de fundo */
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Efeito para o texto */
+.contact-banner h1 {
+  font-size: 36px;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.contact-banner p {
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo do botão */
+.contact-banner .contact-btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #6d673e;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-banner .contact-btn:hover {
+  background-color: #FF6F61;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Estilo para a imagem de fundo */
+.contact-banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4; /* Imagem de fundo com opacidade */
+  border-radius: 8px;
+}
+
+/* Media Query para telas pequenas */
+@media (max-width: 768px) {
+  .contact-banner h1 {
+      font-size: 28px;
+  }
+
+  .contact-banner p {
+      font-size: 16px;
+  }
+
+  .contact-banner .contact-btn {
+      padding: 12px 25px;
+      font-size: 16px;
+  }
+}
+
+
+
+/*formulário.*/
+
+.container8 {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+flex-wrap: wrap;
+}
+
+/* Formulário principal */
+.form-container8 {
+width: 48%;
+background-color: #ffffff;
+padding: 20px;
+border-radius: 20px;
+margin-bottom: 20px;
+}
+
+.form-container8 h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+/* Estilo para os campos de input e textarea */
+.form-container8 input,
+.form-container8 textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+background-color: #e6e4dd;
+border: 1px solid #9f8b7abe;
+border-radius: 40px;
+}
+
+/* Caixa de opinião */
+.opinion-box8 {
+margin-top: 10px;
+height: 100px;
+resize: none;
+}
+
+/* Div para manter os campos de nome, email e senha lado a lado */
+.input-group8 {
+display: flex;
+justify-content: space-between;
+margin-bottom: 15px;
+}
+
+.input-group8 input {
+width: 48%; /* Cada campo ocupa 48% da largura */
+}
+
+/* Campo Nome */
+.input-name8 {
+margin-bottom: 15px;
+}
+
+/* Container da imagem com o segundo formulário */
+.image-container8 {
+height: 350px;
+width: 48%;
+position: relative;
+overflow: hidden;
+border-radius: 8px;
+margin-bottom: 20px;
+}
+
+.image-container8 img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: 0.3; /* Baixa opacidade */
+}
+
+/* Formulário dentro do container da imagem */
+.image-form8 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 80%;
+background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-form8 h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.image-form8 input {
+width: 95%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 40px;
+}
+
+/* Media Query para telas menores (tablets, celulares) */
+@media (max-width: 768px) {
+.container8 {
+    flex-direction: column; /* Empilha os formulários em telas menores */
+    align-items: center;
+}
+
+.form-container8,
+.image-container8 {
+    width: 90%; /* Ajusta a largura dos formulários */
+}
+
+.input-group8 {
+    flex-direction: column; /* Para telas menores, os campos vão se empilhar */
+}
+
+.input-group8 input {
+    width: 100%; /* Cada campo ocupa toda a largura disponível */
+}
+}
+
+/* Media Query para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+.form-container8,
+.image-container8 {
+    width: 100%; /* Formulários ocupam toda a largura da tela */
+}
+
+.image-form8 {
+    width: 90%; /* Ajusta o tamanho do formulário dentro do container de imagem */
+}
+
+.input-group8 input {
+    width: 100%; /* Os campos de email e senha ocupam 100% da largura */
+}
+}
+
+
+button {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 10px 20px;
+  background-color: #3f4e2ec5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:  0.8s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #bc9b40e5;
+}
+
+.container{
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.PAi{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  background-color: #fff;
+}
+
+
+.Pai2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  background-color: #fff;
+}
+
+
+.iframe{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+iframe{
+  height: 400px;
+  width: 1300px;
+  border-radius: 50px;
+ }
+
+
+
+ /*Emial numero e localidade */
+
+.card__button{
+  color: black;
+}
+
+
+
+ .Boox{
+    position: relative;
+    width: 280px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #414022;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgba(255, 255, 255, 0.753);
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.151);
+    color: white;
+ }
+
+ .Imagem1{
+  opacity: 10%;
+ }
+
+
+        /*footer*/ 
+
+ 
+
+.containers{
+  max-width: 1170px;
+ 
+  margin: auto;
+}
+
+
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+ul{
+  list-style: none;
+}
+
+.footer{
+  background-color: #414022;
+  padding:  70px 0;
+}
+.footer-col{
+  
+  padding: 0 15px;
+}
+
+
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  font-weight: 500;
+  position: relative;
+}
+
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #a2871a;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+
+
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+
