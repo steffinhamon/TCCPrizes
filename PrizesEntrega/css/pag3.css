@@ -200,9 +200,10 @@ background-color: white;
 
 .container8 {
 display: flex;
-justify-content: space-between;
+justify-content: center;
 padding: 20px;
 flex-wrap: wrap;
+margin-top: 5%;
 }
 
 /* Formulário principal */

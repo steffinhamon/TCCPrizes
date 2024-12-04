@@ -41,14 +41,27 @@ function tamanho ()
 
   // Chama a função para inicializar os favoritos quando a página carregar
 document.addEventListener('DOMContentLoaded', initializeFavorites);
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.querySelector('.nav-list');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
 
+
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+    window.onload = function() {
+        const linha = document.querySelector('.linha-horizontal');
+        const titulo = document.querySelector('.titulo');
+        
+        linha.classList.add('loaded'); 
+        titulo.classList.add('loaded'); 
+    };
 
 
 
